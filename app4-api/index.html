@@ -1,7 +1,32 @@
-<html ng-app="apiApp">
-	<body>
+<html ng-app="app">
+	<body ng-controller='controller'>
+		<h1>Pokemon Red</h1>
+			<div>
+				<p>
+
+				</p>
+
+				Enter Pokemon Id:<input ng-model='pokemon'/>
+
+				<button ng-click='getPokemon(pokemon)'> See What I Am</button>
+					
+
+			</div>
+
+			<h2>Your Chosen Pokemon</h2>
+			<tr ng-model='currentPokemon'>Name: {{currentPokemon.name}}</tr><br/>
+			<tr ng-model='currentPokemon'>Base Experience: {{currentPokemon.base_experience}}</tr><br />
+			<tr ng-model='currentPokemon'>Height: {{currentPokemon.height}}</tr><br />
+			
+
+
+
+
+			<!--{{currentPokemon.stats}}</tr>-->
+			
+							
 		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

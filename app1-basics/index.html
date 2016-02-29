@@ -1,5 +1,36 @@
-<html>
+<html ng-app='basics'>
 	<body>
+		<h1>Shipping Address Information</h1>
+	<section ng-controller='controller'>
+		<div >
+		  first name:<input ng-model='address.first' />
+			
+		</div>
+		<div >
+		  last name:<input ng-model='address.last'></input>
+			
+		</div>
+		<div>
+		 home address:<input ng-model='address.home'/>
+			
+		</div>
+		<div >
+		 zip code:<input ng-model='address.zipcode'>
+			
+		</div>
+		
+
+		<div class="shipping">
+		<p>{{address.first}}</p>
+		<p>{{address.last}}</p>
+		<p>{{address.home}}</p>
+		<p>{{address.zipcode}}</p>
+		</div>
+
+
+	</section>
+
+		
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
